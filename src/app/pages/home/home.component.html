@@ -1,0 +1,30 @@
+<div class="product-header">
+    <h2> Product List </h2>
+</div>
+
+
+<div class="filter-container">
+    <select id="categoryFilter" (change)="filterProducts($event)">
+    <option value="">All Categories</option>
+    <option *ngFor="let category of categories" [value]="category">
+            {{ category }}
+    </option>
+    </select>
+</div>
+<div *ngIf="!filteredProducts.length">
+    <p>No products available in this category.</p>
+</div>
+
+<hr>
+
+<div class="product-list">
+    <div class="product" *ngFor="let product of filteredProducts">
+        <img [src]="product.image" alt="{{product.title}}">
+        <h3>{{product.title}}</h3>
+        <p>{{product.price | currency}}</p>
+        <button (click)="addToCart(product)" [routerLink]="['/cart']" class="yello-btn"> Add Cart </button>
+        <br>
+        <button class="blue-btn"><a [routerLink]="['/product', product.id]" routerLinkActive="router-link-active">View Details</a></button>
+    </div>
+</div>
+

@@ -1,0 +1,12 @@
+    <div class="product-details-header">
+        <h2>Product Details</h2>
+    </div>
+    <div class="product-details" *ngIf="product">
+        <img [src]="product.image" alt="{{product.title}}">
+        <h2>{{product.title}}</h2>
+        <p>{{product.description}}</p>
+        <h3>{{product.price |currency}}</h3>
+        <h5>Raiting : {{product.rating.rate}} ({{ product.rating.count }} reviews)</h5>
+
+        <button (click)="addToCart()" [routerLink]="['/cart']" class="yello-btn" > Add Cart </button>
+    </div>

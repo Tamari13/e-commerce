@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-header{
+    text-align: center;
+    background-color: rgb(228, 223, 248);
+
+     h2{
+        line-height: 87.14px;
+        letter-spacing: 0.02em ;
+        color: #043873;
+    }
+}
+.filter-container {
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    background-color: rgb(228, 223, 248);
+    color: #043873;
+  
+    select {
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+  }
+  
+
+hr {
+    border-top: 2px solid #696666;
+    height: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(228, 223, 248);
+    .product{
+        border: 1px solid rgb(228, 228, 228);
+        background-color: white;
+        padding: 15px;
+        border-radius: 15px;
+        text-align: center;
+        gap: 10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+        img{
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .yello-btn{
+            width: 115px;
+            height: 45px;
+            border-radius: 8px;
+            border: none;
+            background-color: #FFE492;
+            color: #043873;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+        .yello-btn:hover{
+            background: linear-gradient(90deg, yellow, #f36e57);
+            background-size: 200%;
+            background-position: right;
+            transition: background-position 0.5s ease-in-out;
+            color: rgb(255, 255, 255);
+            scale: 1.05;
+        }
+        .blue-btn{
+            width: 150px;
+            height: 45px;
+            border-radius: 8px;
+            border: none;
+            gap:10px;
+            background-color: #4F9CF9;
+            line-height: 23px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+        }
+        .blue-btn:hover{
+            background-color: rgb(122, 200, 249);
+            color: white;
+            scale: 1.05;
+        }
+    }
+}

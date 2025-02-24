@@ -1,0 +1,57 @@
+
+.product-details-header{
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
+     h2{
+        line-height: 87.14px;
+        letter-spacing: 0.02em ;
+        background-color: rgb(221, 216, 239);
+        color: #043873;
+        border-radius: 15px;
+        border: 2px solid #efecec;
+        box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+
+    }
+  }
+.product-details{
+    border: 1px solid grey;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    img{
+        width: 300px;
+        height: 400px;
+        padding: 20px;
+        object-fit: contain;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+}
+
+.yello-btn{
+    width: 115px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFE492;
+    color: #043873;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.yello-btn:hover{
+    background: linear-gradient(90deg, yellow, #f36e57);
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out;
+    color: rgb(255, 255, 255);
+    scale: 1.05;
+}
